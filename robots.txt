@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /admin/
 Disallow: /private/
 
-Sitemap: https://example.com/sitemap.xml 
+Sitemap: https://elfekky.netlify.app/sitemap.xml 

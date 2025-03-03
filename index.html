@@ -22,9 +22,14 @@
       property="og:description"
       content="شركة الفقي ألوميتال تقدم أجود خدمات الألوميتال في مصر. احصل على أفضل العروض الآن!"
     />
-    <link rel="canonical" href="https://example.com"/>
-    <meta property="og:image" content="https://example.com/logo.png" />
-    <meta property="og:url" content="https://example.com/" />
+
+    <link rel="canonical" href="https://elfekky.netlify.app"/>
+
+    <link rel="preload" as="image" href="./assets/images/kitchens/kitchen.webp">
+
+
+    <meta property="og:image" content="https://elfekky.netlify.app/logo.png" />
+    <meta property="og:url" content="https://elfekky.netlify.app/" />
     <meta name="twitter:card" content="summary_large_image" />
 
     <!-- Schema Markup -->
@@ -33,7 +38,7 @@
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "الفقي ألوميتال",
-        "image": "https://example.com/logo.png",
+        "image": "https://elfekky.netlify.app/logo.png",
         "description": "شركة الفقي ألوميتال متخصصة في تصنيع وتركيب شبابيك وأبواب ومطابخ ألوميتال بجودة عالية.",
         "telephone": "01112772275",
         "address": {
@@ -45,10 +50,11 @@
           "addressCountry": "EG"
         },
         "openingHours": "Mo-Sa 09:00-20:00",
-        "url": "https://example.com",
+        "url": "https://elfekky.netlify.app",
         "priceRange": "20$,80%"
       }
     </script>
+
     <!-- Styles -->
     <link rel="stylesheet" href="./assets/styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -96,7 +102,7 @@
     <!-- ✅ Hero Section (Home) -->
     <header
       id="home"
-      class="h-screen flex items-center justify-center bg-blue-800 text-white text-center p-6"
+      class="min-h-[80vh] flex items-center justify-center bg-blue-800 text-white text-center p-6"
     >
       <div class="p-4 bg-[#c2c2bc4f] rounded-xl sm:mb-[350px]">
         <h1 class="text-4xl text-blue-800 font-bold">
@@ -230,17 +236,12 @@
             class="rounded shadow-lg object-cover"
           />
         </div>
-        <button
-          class="mt-5 inline-block bg-yellow-600 text-blue-800 text-xl px-6 py-2 rounded shadow-lg"
-        >
-          <a
-            href="./Gallery.html"
-            target="_blank"
-            class="text-blue-800 font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-yellow-400"
-          >
-            تعرف على خدماتنا الكاملة في صناعة الألوميتال.
-          </a>
-        </button>
+      <button class="mt-5 inline-block bg-yellow-600 text-blue-800 text-xl px-8 py-4 rounded-lg shadow-lg focus:ring-4 focus:ring-yellow-300">
+      <a href="./Gallery.html" class="text-blue-800 font-semibold hover:underline focus:outline-none focus:ring-4 focus:ring-yellow-400 inline-block px-4 py-3">
+     تعرف على خدماتنا الكاملة في صناعة الألوميتال.
+      </a>
+  </button>
+
       </div>
     </section>
 
