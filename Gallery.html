@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ar" style="scroll-behavior: smooth; direction: rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ✅ تحسين الSEO -->
+    <title>معرض أعمال الفقي ألوميتال | أفضل تصميمات الألوميتال</title>
+    <meta
+      name="description"
+      content="معرض أعمال الفقي ألوميتال - تصفح أفضل تصميمات الشبابيك، الأبواب، والمطابخ المصنوعة من الألوميتال بجودة عالية وأسعار تنافسية."
+    />
+    <meta
+      name="keywords"
+      content="معرض أعمال الألوميتال, شبابيك ألوميتال, أبواب ألوميتال, مطابخ ألوميتال, تصنيع الألوميتال"
+    />
+    <meta name="author" content="شركة الفقي ألوميتال" />
+
+    <!-- ✅ تحسين السوشيال ميديا (Open Graph & Twitter Cards) -->
+    <meta
+      property="og:title"
+      content="معرض أعمال الفقي ألوميتال - أفضل تصميمات الألوميتال"
+    />
+    <meta
+      property="og:description"
+      content="اكتشف تشكيلتنا الرائعة من الشبابيك، الأبواب، والمطابخ الألوميتال المصممة بأعلى معايير الجودة."
+    />
+    <meta
+      property="og:image"
+      content="https://example.com/assets/images/gallery-cover.webp"
+    />
+    <meta property="og:url" content="https://example.com/gallery" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- ✅ Schema Markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "معرض أعمال الفقي ألوميتال",
+        "description": "تصفح أفضل تصميمات الألوميتال من شركة الفقي ألوميتال، بما في ذلك الشبابيك، الأبواب، والمطابخ عالية الجودة.",
+        "url": "https://example.com/gallery"
+      }
+    </script>
+    <title>الفقي ميتال | معرض أعمالنا</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <!-- ✅ Navbar -->
+    <nav class="bg-blue-700 p-4 text-white sticky top-0 z-50">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">الفقي ألوميتال</h1>
+        <!-- زر القائمة في الموبايل -->
+        <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+        <!-- القائمة -->
+        <ul
+          id="menu"
+          class="md:flex md:space-x-0 md:static md:bg-transparent md:w-auto md:flex-row md:translate-x-0 absolute top-16 left-0 bg-blue-700 w-full flex flex-col items-center hidden translate-x-full"
+        >
+          <li>
+            <a
+              href="./index.html#home"
+              class="block py-2 px-4 hover:text-yellow-400"
+              >الرئيسية</a
+            >
+          </li>
+          <li>
+            <a
+              href="./index.html#about"
+              class="block py-2 px-4 hover:text-yellow-400"
+              >من نحن</a
+            >
+          </li>
+          <li>
+            <a
+              href="./index.html#gallery"
+              class="block py-2 px-4 hover:text-yellow-400"
+              >سابقة الأعمال</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Gallery -->
+    <section id="our-gallery" class="py-16 bg-gray-100 text-center">
+      <div class="container mx-auto px-6">
+        <h3 class="text-3xl font-bold text-blue-700 mb-8">معرض أعمالنا</h3>
+        <p class="text-gray-700 mb-6 max-w-2xl mx-auto">
+          استعرض بعض من أعمالنا المميزة في مجال الألوميتال، حيث نقدم تصميمات
+          فريدة بجودة عالية.
+        </p>
+
+        <!-- Filter Buttons -->
+        <div class="mb-6 flex justify-center space-x-4 gap-2">
+          <button
+            class="filter-btn bg-blue-600 text-white px-4 py-2 rounded shadow-lg active"
+            data-category="all"
+          >
+            الكل
+          </button>
+          <button
+            class="filter-btn bg-gray-600 text-white px-4 py-2 rounded shadow-lg"
+            data-category="windows"
+          >
+            الشبابيك
+          </button>
+          <button
+            class="filter-btn bg-gray-600 text-white px-4 py-2 rounded shadow-lg"
+            data-category="kitchens"
+          >
+            المطابخ
+          </button>
+          <button
+            class="filter-btn bg-gray-600 text-white px-4 py-2 rounded shadow-lg"
+            data-category="doors"
+          >
+            الأبواب
+          </button>
+        </div>
+
+        <!-- Images-->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+        >
+          <!-- Kitchens-->
+          <div class="gallery-item kitchens">
+            <img
+              src="./assets/images/kitchens/blue-kitchen.webp"
+              alt="مطبخ ألوميتال"
+              loading="lazy"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+          <div class="gallery-item kitchens">
+            <img
+              src="./assets/images/kitchens/green-kitchen-1.webp"
+              alt="مطبخ ألوميتال"
+              loading="lazy"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+          <div class="gallery-item kitchens">
+            <img
+              src="./assets/images/kitchens/pink-kitchen.webp"
+              alt="مطبخ ألوميتال"
+              loading="lazy"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+          <div class="gallery-item kitchens">
+            <img
+              src="./assets/images/kitchens/red-kitchen.webp"
+              alt="مطبخ ألوميتال"
+              loading="lazy"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+          <div class="gallery-item kitchens">
+            <img
+              src="./assets/images/kitchens/yellow-kitchen.webp"
+              alt="مطبخ ألوميتال"
+              loading="lazy"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+          <div class="gallery-item kitchens">
+            <img
+              src="./assets/images/kitchens/wooden-kitchen.webp"
+              alt="مطبخ ألوميتال"
+              loading="lazy"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+          <div class="gallery-item kitchens">
+            <img
+              src="./assets/images/kitchens/kitchen-1.webp"
+              alt="مطبخ ألوميتال"
+              loading="lazy"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+          <div class="gallery-item kitchens">
+            <img
+              src="./assets/images/kitchens/kitchen-2.webp"
+              alt="مطبخ ألوميتال"
+              loading="lazy"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+          <div class="gallery-item kitchens">
+            <img
+              src="./assets/images/kitchens/kitchen-3.webp"
+              alt="مطبخ ألوميتال"
+              loading="lazy"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+          <div class="gallery-item kitchens">
+            <img
+              src="./assets/images/kitchens/kitchen-4.webp"
+              alt="مطبخ ألوميتال"
+              loading="lazy"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+          <div class="gallery-item kitchens">
+            <img
+              src="./assets/images/kitchens/kitchen-5.webp"
+              alt="مطبخ ألوميتال"
+              loading="lazy"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+          <div class="gallery-item kitchens">
+            <img
+              src="./assets/images/kitchens/kitchen-6.webp"
+              alt="مطبخ ألوميتال"
+              loading="lazy"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+          <div class="gallery-item kitchens">
+            <img
+              src="./assets/images/kitchens/kitchen-7.webp"
+              alt="مطبخ ألوميتال"
+              loading="lazy"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+          <div class="gallery-item kitchens">
+            <img
+              src="./assets/images/kitchens/kitchen-8.webp"
+              alt="مطبخ ألوميتال"
+              loading="lazy"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+
+          <!-- Windows-->
+          <div class="gallery-item windows">
+            <img
+              src="./assets/images/windows/pink-window.webp"
+              alt="شباك ألوميتال"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+          <div class="gallery-item windows">
+            <img
+              src="./assets/images/windows/red-white-window.webp"
+              alt="شباك ألوميتال"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+          <div class="gallery-item windows">
+            <img
+              src="./assets/images/windows/yellow-window.webp"
+              alt="شباك ألوميتال"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+          <div class="gallery-item windows">
+            <img
+              src="./assets/images/windows/window-1.webp"
+              alt="شباك ألوميتال"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+
+          <!-- Doors -->
+          <div class="gallery-item doors">
+            <img
+              src="./assets/images/doors/door-1.webp"
+              alt="باب ألوميتال"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+          <div class="gallery-item doors">
+            <img
+              src="./assets/images/doors/door-2.webp"
+              alt="باب ألوميتال"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+          <div class="gallery-item doors">
+            <img
+              src="./assets/images/doors/door-3.webp"
+              alt="باب ألوميتال"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+          <div class="gallery-item doors">
+            <img
+              src="./assets/images/doors/door-4.webp"
+              alt="باب ألوميتال"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+          <div class="gallery-item doors">
+            <img
+              src="./assets/images/doors/door-5.webp"
+              alt="باب ألوميتال"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+          <div class="gallery-item doors">
+            <img
+              src="./assets/images/doors/door-6.webp"
+              alt="باب ألوميتال"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+          <div class="gallery-item doors">
+            <img
+              src="./assets/images/doors/door-7.webp"
+              alt="باب ألوميتال"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+          <div class="gallery-item doors">
+            <img
+              src="./assets/images/doors/door-8.webp"
+              alt="باب ألوميتال"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+          <div class="gallery-item doors">
+            <img
+              src="./assets/images/doors/door-9.webp"
+              alt="باب ألوميتال"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+          <div class="gallery-item doors">
+            <img
+              src="./assets/images/doors/door-10.webp"
+              alt="باب ألوميتال"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+          <div class="gallery-item doors">
+            <img
+              src="./assets/images/doors/door-11.webp"
+              alt="باب ألوميتال"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+          <div class="gallery-item doors">
+            <img
+              src="./assets/images/doors/door-12.webp"
+              alt="باب ألوميتال"
+              class="w-full h-full object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ Footer -->
+    <footer class="w-full bg-blue-700 text-white text-center p-4 mt-6">
+      <p>© 2024 الفقي ألوميتال | جميع الحقوق محفوظة</p>
+      <a href="tel:01112772275" class="text-2xl text-yellow-400 font-bold"
+        ><p>للتواصل: 01112772275 📞</p></a
+      >
+    </footer>
+
+    <!-- ✅ زر الاتصال الآن -->
+    <a
+      href="tel:01017670555"
+      id="call-now"
+      class="fixed bottom-16 right-5 bg-yellow-400 text-blue-800 p-3 rounded-full shadow-lg font-bold mb-3"
+    >
+      اتصل الآن 📞
+    </a>
+
+    <!-- ✅ زر الرجوع للأعلى -->
+    <button
+      id="scroll-top"
+      class="fixed bottom-5 right-5 bg-blue-700 text-white px-5 py-3 rounded-full shadow-lg"
+    >
+      ↑
+    </button>
+
+    <!-- Javascript -->
+    <script src="./main.js"></script>
+  </body>
+</html>
