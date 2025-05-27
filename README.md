@@ -2,7 +2,7 @@
 
 **ElfekyMetal** is a static business website created for a metal and aluminum manufacturing factory. The site features company information, services, and a gallery.
 
-![ElfekyMetal Screenshot](https://i.postimg.cc/cHdBMRsT/elfekymetal.png)
+![ElfekyMetal Screenshot](https://i.postimg.cc/63zLH8qK/elfekymetal.png)
 
 ## 🔗 Demo
 
